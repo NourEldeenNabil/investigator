@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" href="static/img/Home/icon.png" type="image/png">
+		<title>{{pagename}}</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="static/css/bootstrap.css">
+		<link rel="stylesheet" href="static/vendors/linericon/style.css">
+		<link rel="stylesheet" href="static/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/vendors/owl-carousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="static/css/magnific-popup.css">
+		<link rel="stylesheet" href="static/vendors/nice-select/css/nice-select.css">
+		<link rel="stylesheet" href="static/vendors/animate-css/animate.css">
+		<link rel="stylesheet" href="static/vendors/flaticon/flaticon.css">
+
+		<!-- Font Icon -->
+		<link rel="stylesheet" href="static/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+		<!-- Main css -->
+		<link rel="stylesheet" href="static/css/style.css">
+	</head>
+	<body>
+		<!--================Header Menu Area =================-->
+		<header class="header_area">
+    		<div class="main_menu">
+				{% include 'nav.html' %}
+    		</div>
+		</header>
+		<!--================Header Menu Area =================-->
+
+		{% block body %}
+		{% endblock %}
+
+		{% include 'footer.html' %}
+		
+	</body>
+</html>

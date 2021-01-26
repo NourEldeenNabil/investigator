@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+
+	{% include 'banner.html' %}
+
+	<div style="align-content: center;">
+		<form action = "/Check-percentage" method ="POST" enctype = "multipart/form-data">
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+			<input type="submit"/>
+		</form>
+	</div>
+{% endblock %}
