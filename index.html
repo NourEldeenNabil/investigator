@@ -22,7 +22,7 @@
 
 <body>
 
-	 <!--================Header Menu Area =================-->
+	 <!--================ Start Header Menu Area =================-->
 	<header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
@@ -46,21 +46,14 @@
 								 aria-expanded="false">Plagiarism Checker</a>
 								<ul class="dropdown-menu">
 									
-                      <li class="nav-item"><a class="nav-link" href="Check-percentage.html">Check percentage</a>
-									<li class="nav-item"><a class="nav-link" href="Check-the-type.html">Check the type</a>
-                                   <li class="nav-item"><a class="nav-link" href="Check-the-level.html">Check the level</a>
+                      <li class="nav-item"><a class="nav-link" href="Check-percentage.html">Plagiarism Ratio (%)</a>
+									<li class="nav-item"><a class="nav-link" href="Check-the-type.html">Plagiarism type</a>
+                                   <li class="nav-item"><a class="nav-link" href="Check-the-level.html">Plagiarism level</a>
                                      
-								</ul>
-							</li>
-                            
-                            
-                            <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Grammar Checker</a>
-								<ul class="dropdown-menu">
+						
 									
-                                    <li class="nav-item"><a class="nav-link" href="Check-grammar.html">Check grammar</a>
-									<li class="nav-item"><a class="nav-link" href="Check-vocabulary.html">Check vocabulary</a>
+                                <li class="nav-item"><a class="nav-link" href="Check-grammar.html">Check grammar</a>
+								<li class="nav-item"><a class="nav-link" href="Check-vocabulary.html">Check vocabulary</a>
                              
 								</ul>
 							</li>
@@ -71,7 +64,7 @@
                             
                       
 						</ul>
-						<ul class="nav navbar-nav navbar-right" >
+						<ul class="nav navbar-nav navbar-right ml+1" >
 							
                                 <li class="nav-item"><a href="sign-up.html" class="primary_btn" >Register</a></li>
                             
@@ -80,13 +73,27 @@
                          </ul>
                         
                         
-        			<ul class="nav navbar-nav navbar-right ml-3"  >
+        			<ul class="nav navbar-nav navbar-right ml-4"  >
 							
                                 <li class="nav-item"><a href="sign-in.html" class="primary_btn" >Login</a></li>
+                        </ul>
                             
                            
                             
-                         </ul>
+                     	  
+                        
+                        <ul class="nav navbar-nav navbar-right ml-4"  >
+							
+                                <li class="nav-item">  <a href="profile.html" > <img data-u="image" src="img/profile.png" style="width: 180px; height:80px"  title="Profile"> </a>
+                        
+                            </li>
+                            
+                           
+                            
+                         </ul>  
+                       
+                        
+                        
                         
 
 					</div>
@@ -97,12 +104,12 @@
     
     
 	</header>
-	<!--================Header Menu Area =================-->
+	<!--================End Header Menu Area =================-->
     
     
     
     
-	<!--================Home Banner Area =================-->
+	<!--================Start Home Welcome Banner Area =================-->
 	<section class="home_banner_area">
 		<div class="banner_inner">
 			<div class="container">
@@ -114,16 +121,16 @@
 					</div>
 					<div class="col-lg-6">
 						<div class="banner_content">
-							<h2>
+							<h2><font style=" color:aqua" face=verdana>
 								Welcome to Investigator
-							</h2>
+                                      </font> </h2>
 							
 							<div class="d-flex align-items-center">
-								<a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?v=zF5Ddo9JdpY">
+								<a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?v=09VFPeCb_Ko">
 									<span></span>
 								</a>
 								<div class="watch_video text-uppercase">
-									watch the video
+									Watch the video
 								</div>
 							</div>
 						</div>
@@ -132,12 +139,67 @@
 			</div>
 		</div>
 	</section>
-	<!--================End Home Banner Area =================-->
+	<!--================ End Home Welcome Banner Area =================-->
 
 
+     <!--================  Start plagiarism checking Area  =================-->
+        <section class="banner_area" style="margin-top: 100px; height: 600px;">
+            <div class="banner_inner d-flex align-items-center" >
+				<div class="overlay bg-parallax" ></div>
+				
+				<div class="container">
+					
+					<div class="banner_content text-center mt-0 ">
+						<div class="container" style="margin: auto;">
+							<h2> <font style="font:20px; color:darkorange" size="+20" face=Potta >100% Free to Detect Plagiarism Online</font></h2>
+							<div class= "row">
+								<div class="col-md-12">
+									<div class="form-group" >
+										<label for="exampleFormControlTextarea1" class="form-label" style="color: cornsilk; font-size: 30px;" >Upload Your File</label>
+										<p style="color: aliceblue; display: block;">With No limit of Words ! </p>
+							<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Text Here ..........." rows="3" style="width: 500px; height: 200px; margin: auto;"></textarea>
+							<p style="color: aliceblue; display: block;">TOTAL WORDS: 0</p>			
+							
+										
+						</div>
+							</div>
+						</div>
 
-	<!--================First uploading Area =================-->
-	<!-- style="width:260px;height:220px;z-index:0";>-->
+						
+						<div class= "row">
+							<div class="col-md-12" >
+								<div class="form-group" >
+									<div class="mb-3" style="width: 300px; margin: auto;">
+ 										 <input class="form-control" type="file" id="formFileMultiple" multiple>
+									  </div>
+									  
+								</div>
+						</div>
+					</div>
+
+						
+					<div class = "row">
+						<div class="col-md-12">
+							<button class="btn btn-primary" type="submit">Check Plagrism Percentage</button>
+						</div>
+						
+					</div>
+						</div>
+						
+					</div>
+				</div>
+            </div>
+		</section>
+		
+		  
+		  
+    <!--================ End plagiarism checking Area =================-->
+      
+    
+    
+
+	<!--================ Other Cheking Area =================-->
+	
     <section class="upcoming_games_area">
 		<div class="container">
 			<div class="row">
@@ -151,42 +213,45 @@
 			<div class="row text-center">
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/Home/registration-icon-png-6.png">
+						<img src="img/Home/upl.png">
 						<div class="upcoming_title">
-							<h3><a href="Writing-Tips.html">Writing Tips</a></h3>
+							<h3><a href="Check-the-type.html">Check Plagiarism Type</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/Home/upload-icon-15.png">
+					<img src="img/Home/upl.png">
 						<div class="upcoming_title">
-							<h3><a href="#">Upload Your file</a></h3>
+							<h3><a href="Check-the-level.html">Check plagiarism Level</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/Home/check-icon6.png">
+							<img src="img/Home/upl.png">
 						<div class="upcoming_title">
-							<h3><a href="#">Check plagiarism</a></h3>
+							<h3><a href="Check-grammar.html">Check Grammar</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/Home/download.ico" alt="">
+							<img src="img/Home/upl.png">
 						<div class="upcoming_title">
-							<h3><a href="#">Download plagiarism report</a></h3>
+							<h3><a href="Check-vocabulary.html">Check Vocabulary</a></h3>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================End uploading Area =================-->
+	<!--================ Other Cheking Area =================-->
+    
+    
+    
 
-	<!--================Start features Area =================-->
+	<!--================Start detailed features Area =================-->
 	<section class="recent_update_area section_gap">
 		<div class="container">
 			<div class="recent_update_inner">
@@ -205,7 +270,7 @@
 					<li class="nav-item">
 						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
 						 aria-selected="false">
-							Download Plagiarism Report
+							Register Now !
 						</a>
 					</li>
 				</ul>
@@ -214,7 +279,7 @@
 						<div class="row recent_update_text">
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/Home/thief.webp">
+									<img class="img-fluid" src="img/Home/thief.png">
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -222,7 +287,7 @@
 									<h6>Enjoy Investigator</h6>
 									<h1>Check The percentage Of Plagiarism</h1>
 									<p>This tool has the ability to check plagiarism by matching your content against billions of webpages on the Internet. Once you upload your content, it will automatically run it against every existing content on the web within seconds, making it the most sophisticated yet fastest plagiarism scanner you'll ever come across in your lifetime.</p>
-									<a class="primary_btn" href="#">Learn More</a>
+									<a class="primary_btn" href="Check-percentage.html">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -238,8 +303,10 @@
 								<div class="section_content">
 									<h6>Enjoy Investigator</h6>
 									<h1>Upload Your File</h1>
-									<p>If your content is rather local, living in a file within your computer, then you can upload it directly from the local storage.</p>
-									<a class="primary_btn" href="http://www.gamesforchange.org/what-we-do/challenges/">Learn More</a>
+									<p>	You Can Upload Your File And Check Plagiarism Percentage, Plagiarism Type, Plagiarism Level, Grammar And Vocabulary For Any File You Want With No Words Limit.
+                                        And It Is Completely FREE !
+                                    </p>
+									<a class="primary_btn" href=Check-percentage.html>Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -248,15 +315,15 @@
 						<div class="row recent_update_text">
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/Home/downloads-icon-15.png" alt="">
+									<img class="img-fluid" src="img/Home/registration-icon-png-6.png" alt="">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="section_content">
 									<h6>Enjoy Investigator</h6>
-									<h1>Download Plagiarism Report</h1>
-									<p>Our anti-plagiarism engine comes with a reporting option which allows you to download a report of the plagiarism search you run. This means you now have some sort of evidence to send across to the relevant parties and a record to keep. Awesome!</p>
-									<a class="primary_btn" href="https://www.businessinsider.com/video-games-2019-list-2018-12">Learn More</a>
+									<h1>Wrighting Tips</h1>
+									<p>Register Now To Authorize Your Work And Also Our Anti-plagiarism Engine Has Wrighting Tips To Strength Your Writing Skills  Awesome!</p>
+									<a class="primary_btn" href="Writing-Tips.html">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -265,76 +332,11 @@
 			</div>
 		</div>
 	</section>
-	<!--================End Recent Update Area =================-->
+	<!--================End detailed features Area =================-->
 
-
-	<!--================ Start Gallery Area =================
-	<section class="gallery_area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title">
-						<h2 id="UP">Screens Gallery</h2>
-						<h1 id="UP2">Screens Gallery</h1>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6">
-							<div class="single-gallery">
-								<div class="overlay"></div>
-								<img class="img-fluid w-100" src="img/gallery_img1.png" alt="">
-								<div class="content">
-									<a class="pop-up-image" href="img/gallery_img1.png">
-										<i class="lnr lnr-eye"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6">
-							<div class="single-gallery">
-								<div class="overlay"></div>
-								<img class="img-fluid w-100" src="img/gallery_img2.png" alt="">
-								<div class="content">
-									<a class="pop-up-image" href="img/gallery_img2.png">
-										<i class="lnr lnr-eye"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single-gallery">
-								<div class="overlay"></div>
-								<img class="img-fluid w-100" src="img/gallery_img3.png" alt="">
-								<div class="content">
-									<a class="pop-up-image" href="img/gallery_img3.png">
-										<i class="lnr lnr-eye"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 hidden-md hidden-sm">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery_img4.png" alt="">
-						<div class="content">
-							<a class="pop-up-image" href="img/gallery_img4.png">
-								<i class="lnr lnr-eye"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Gallery Area =================-->
-
-
-	
+    
+    
+    
 
 	
 	<!--================ Start Frequently Asked Questions Area ================-->
@@ -349,13 +351,48 @@
 				</div>
 			</div>
 			<div class="row frequent_inner">
+                
+                <div class="col-lg-5 col-md-5">
+					<div class="frequent_item">
+						<h3 id="UP">What is plagiarism? And What are the levels of plagiarism?</h3>
+<p>
+    Plagiarism is presenting someone else's work or ideas as your own, with or without their consent, by incorporating it into your work without full acknowledgement.<br> <br><br>  <br> 
+    It Is Levels : <br>
+ if (>50%) it will be level one.
+                          <br> 
+(between 20 and 50%) level two.<br>
+(up to 20%) Level three.<br>
+Else will be level four.<br>
+
+                          
+                         <br><br> 
+</p>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+					<div class="frequent_item">
+						<h3 id="UP">What Are The Types Of Plagiarism?</h3>
+						<p>  
+If a writer copies, word for word, the text from the author book and doesn't acknowledge in anyway, that it was author word for word work then we will name this type of the plagiarism (copying).<br>
+
+When the plagiarizer borrows the "phrases and clauses from the original source and weaves them into his own writing" without putting the phrases in quotation marks or citing the author then we will name this type of the plagiarism (Patchwork Plagiarism).<br>
+
+The plagiarizer paraphrases or summarizes another's work without citing the source then we will name this type of the plagiarism (Paraphrasing Plagiarism).<br>
+
+The writer incorrectly quotes and/or incorrectly cites a source they are using then we will name this type of the plagiarism (Unintentional).<br>
+ 
+                        </p>
+					</div>
+				</div>
+                
+                
 				<div class="col-lg-5 col-md-5">
 					<div class="frequent_item">
 						<h3 id="UP">What is the importance of plagiarism detection?</h3>
 <p>
 Whether you know it or not, plagiarism does affect you in some way. It doesn't matter whether you're the content creator or the one who consumes the content, plagiarism affects us all.
 
-As a content creator (writer, author, researcher, student, freelancer, blogger, social media manager, etc. It's no news that you should be regularly checking to be sure that nobody is copying your content without your permission or giving you credit.
+As a content creator (writer, author, researcher, student, freelancer, blogger, etc. It's no news that you should be regularly checking to be sure that nobody is copying your content without your permission.
 </p>
 					</div>
 				</div>
@@ -364,15 +401,15 @@ As a content creator (writer, author, researcher, student, freelancer, blogger, 
 						<h3 id="UP">Can you go to jail if you plagiarize?</h3>
 						<p>  
 Most cases of plagiarism are considered misdemeanors, punishable by fines of anywhere between $100 and $50,000 — and up to one year in jail. Plagiarism can also be considered a felony under certain state and federal laws.
-                        <br>  <br>  <br>  <br>
+                        <br>  <br>  <br>  
                         </p>
 					</div>
 				</div>
 				<div class="col-lg-5 col-md-5">
 					<div class="frequent_item">
 						<h3 id="UP">Why is it important to not plagiarize?</h3>
-						<p>Plagiarism is unethical for three reasons: Firstly, it is unethical because it is a form of theft. By taking the ideas and words of others and pretending they are your own, you are stealing someone else's intellectual property. Secondly, it is unethical because the plagiariser subsequently benefits from this theft.
-                         <br>  <br> </p>
+						<p>Plagiarism is unethical because it is a form of theft. By taking the ideas and words of others and pretending they are your own, you are stealing someone else's intellectual property.
+                          </p> 
 					</div>
 				</div>
 				<div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
@@ -381,7 +418,7 @@ Most cases of plagiarism are considered misdemeanors, punishable by fines of any
 						<p>
                           
 If you unintentionally plagiarize, and you have no previous infractions, then most colleges will lower your grade or fail you for the course.
-                    <br>  <br>  <br>  <br>         
+                    <br>   
 </p>
 					</div>
 				</div>
@@ -390,54 +427,155 @@ If you unintentionally plagiarize, and you have no previous infractions, then mo
 				</div>
 		
 	</section>
+    
 	<!--================ End Frequently Asked Questions Area ================-->
-
-	
-	 <!--================ Start Newsletter Area ================-->
-	<section class="newsletter_area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<div class="newsletter_inner">
-						<h1>Enjoy Your Time With Investigator!</h1>
-						
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--================ End Newsletter Area ================-->
- <br>
-        <br>
-	<!--================Footer Area =================-->
-	<footer class="footer_area section_gap_top">
-
+    
+    
+    
+    <!--================Footer Area =================-->
+    
+		<section class="testimonials_area section_gap">
 			<div class="container">
-                <div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4">
-					<div class="copy_right_text">
-						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy; by Investigator 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				<div class="testi_slider owl-carousel">
+					<div class="testi_item">
+						
+						<center><h2> <font size="+3" face=verdana color="aqua">Our Features</font></h2></center>
+						<ul class="list">
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+						</ul>
+						<div class="wow fadeIn" data-wow-duration="1s">
+                            
+<center><h2> <font size="+2" face=verdana color="yellow">100% Free to Detect Plagiarism Online</font></h2></center>
+						</div>
+					</div>
+                    
+                    
+                    <div class="testi_item">
+						
+						<center><h2> <font size="+3" face=verdana color="aqua">Our Features</font></h2></center>
+						<ul class="list">
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+						</ul>
+						<div class="wow fadeIn" data-wow-duration="1s">
+							<center><h2> <font size="+2" face=verdana color="yellow">
+							You Can Check Plagiarism Percentage, Plagiarism Type, Plagiarism Level, Grammar And Vocabulary For Any File You Want !
+							</font></h2></center>
+						</div>
+					</div>
+                    
+                    
+                    
+                    <div class="testi_item">
+						
+						<center><h2> <font size="+3" face=verdana color="aqua">Our Features</font></h2></center>
+						<ul class="list">
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+						</ul>
+						<div class="wow fadeIn" data-wow-duration="1s">
+                            
+				<center><h2> <font size="+2" face=verdana color="yellow">You Can Now Register to Authorize Your Work !</font></h2></center>
+                            
+                            
+						</div>
+					</div>
+                    
+                    
+                    <div class="testi_item">
+						<center><h2> <font size="+3" face=verdana color="aqua">Our Features</font></h2></center>
+						<ul class="list">
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+						</ul>
+						<div class="wow fadeIn" data-wow-duration="1s">
+								<center><h2> <font size="+2" face=verdana color="yellow">
+                                    Investigator Has Wrighting Tips To Strength Your Writing Skills 
+                                    
+                                    </font></h2></center>
+						</div>
+					</div>
+                    
+                    
+					<div class="testi_item">
+						
+					<center><h2> <font size="+3" face=verdana color="aqua">Our Features</font></h2></center>
+						<ul class="list">
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+						</ul>
+						<div class="wow fadeIn" data-wow-duration="1s">
+								<center><h2> <font size="+2" face=verdana color="yellow">
+								Investigator Has No Words Limit !
+                                 </font></h2></center>
+						</div>
+					</div>
+					<div class="testi_item">
+						
+						<center><h2> <font size="+3" face=verdana color="aqua">Our Features</font></h2></center>
+						<ul class="list">
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+							<li><a href="#"><i class="fa fa-star"></i></a></li>
+						</ul>
+						<div class="wow fadeIn" data-wow-duration="1s">
+							<center><h2> <font size="+2" face=verdana color="Yellow">
+						You Can Contact Us Anytime You Want On Our Social Media Links Belelow :) 
+							</font></h2></center>
+						</div>
 					</div>
 				</div>
-                    <div  class="col-lg-4 col-md-4 col-sm-4" ></div>
-				<div class="col-lg-4 col-md-4 col-sm-4" >
-					<ul>
-<di>  <a href="https://www.facebook.com/noureldeeen.nabil"> <img data-u="image" src="img/fb.png" style="width: 40px; height:40px"  title="Contact Us on facebook"> </a>
-     </di>
-<di>  <a href="https://www.instagram.com/noor_eldeen_nabil/?hl=en"> <img data-u="image" src=img/insta.png style="width: 40px; height: 40px"  title="Contact Us on instgram"> </a> </di>
-<di>  <a href="https://twitter.com/NourEldeenNabel/"> <img data-u="image" src="img/twitter.png" style="width: 40px; height: 40px"  title="Contact Us on Twitter"> </a> </di>
-<di> <a href="https://www.Gmail.com/"> <img data-u="image" src=img/mail.jpg style="width: 40px; height: 40px"  title="Contact Us on Mail"> </a> </di>
-</ul>
-				</div>
-                    </div>
 			</div>
-		
-	</footer>
+            
+		</section> 
+    <center><h2> <font size="+2" face=verdana color="white">Enjoy Your Time With</font></h2></center>
+<center>  <font size="+3" face=impact color="red" >Investigator</font></center>
+    				
+                                         <right>
+                               
+     <a href="https://www.facebook.com/Investigator-535079360743123" > <img data-u="image" src="img/fb-round.png" style="width: 50px; height:50px"  title="Like Our Page On Facebook"> </a>
+     
+     <a href="#" > <img data-u="image" src="img/twitter-round.png" style="width: 50px; height:50px"  title="Follow Our Account Twitter "> </a>
+                                             
+     <a href="#" > <img data-u="image" src="img/youtube-round.png" style="width: 50px; height:50px"  title="Subscribe Our Channel On YouTube"> </a>
+                                             
+     <a href="#" > <img data-u="image" src="img/gmail-round.png" style="width: 50px; height:50px"  title="Contact Us On Our Gmail"> </a>
+
+                                        </right>
+  
+                
+    
+      <div class="copy_right_text ml-2">
+          
+<p>Copyright &copy; by Investigator.com </p>
+      
+    </div>
+    
+                
+
 	<!--================End Footer Area =================-->
 
+    
+    
+    
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -453,7 +591,7 @@ Copyright &copy; by Investigator
 	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
 	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
 	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
+	<!--nour Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
